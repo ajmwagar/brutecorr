@@ -18,6 +18,7 @@ fn main() {
                           .author("Avery Wagar <ajmw.subs@gmail.com>")
                           .about("Brute force Pearson Correlational Coeffiecents")
                           .arg(Arg::with_name("target")
+                               .allow_hyphen_values(true)
                                .short("t")
                                .long("target")
                                .value_name("TARGET")
@@ -33,6 +34,7 @@ fn main() {
                                .required(true)
                                .index(1))
                           .arg(Arg::with_name("error")
+                               .allow_hyphen_values(true)
                                .short("e")
                                .long("error")
                                .value_name("ERROR")
@@ -63,7 +65,7 @@ fn main() {
     else if error < 0.01 {
         println!("Low error value, crash is possible.");
     }
-    else if error >= 1{
+    else if error >= 1.0 {
         panic!("Error value is too large. Stopping!")
     }
 
