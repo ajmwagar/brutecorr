@@ -1,4 +1,4 @@
-/bin/bash: :w: command not found
+import math
 import random
 import sys
 
