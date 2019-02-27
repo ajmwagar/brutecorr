@@ -1,7 +1,73 @@
+#![allow(non_snake_case)]
+
+extern crate rand;
 use rand::{thread_rng, Rng};
+extern crate clap;
+use clap::{Arg, App};
 
 fn main() {
-    println!("{:?}", brute_force_correlation(&[2.0, 2.3, 3.3, 3.7, 4.2, 4.6, 4.5, 5., 5.5, 5.7, 6.1, 6.4], 0.75, 0.001, 0 as usize))
+    let matches = App::new("brutecorr")
+                          .version("1.0")
+                          .author("Avery Wagar <ajmw.subs@gmail.com>")
+                          .about("Brute force Pearson Correlational Coeffiecents")
+                          .arg(Arg::with_name("target")
+                               .short("t")
+                               .long("target")
+                               .value_name("TARGET")
+                               .help("set the Pearson Correlational Coeffiecent")
+                               .takes_value(true)
+                               .required(true))
+                          .arg(Arg::with_name("L1")
+                               // .short("l")
+                               // .long("list")
+                               .value_name("L1")
+                               // .help("set L1")
+                               .takes_value(true)
+                               .required(true)
+                               .index(1))
+                          .arg(Arg::with_name("error")
+                               .short("e")
+                               .long("error")
+                               .value_name("ERROR")
+                               .help("(Optional) set room for error (eg. 0.1, 0.001). printlnING: making this a very low decimal will cause brutecorr to crash!")
+                               .takes_value(true))
+                          .arg(Arg::with_name("v")
+                               .short("v")
+                               .multiple(true)
+                               .help("(Optional) Sets the level of verbosity"))
+                          .get_matches();
+
+    // Gets a value for config if supplied by user, or defaults to "default.conf"
+    let error = matches.value_of("error").unwrap_or("0.1").parse::<f64>().unwrap();
+
+    if error <= 0.0 {
+        panic!("Error value is too small. Stoppping!");
+    }
+    else if error <= 0.00001 {
+        println!("Low error value, crash is imminent!")
+    }
+    else if error <=  0.0001 {
+        println!("Low error value, crash is very likely!")
+    }
+    else if error <= 0.001 {
+        println!("Low error value, crash is likely!")
+    }
+    else if error < 0.01 {
+        println!("Low error value, crash is possible.");
+    }
+
+    let target: f64 = matches.value_of("target").unwrap().parse().unwrap();
+
+    let input = matches.value_of("L1").unwrap();
+
+    let L1: Vec<f64> = input.split_whitespace().map(| word| word.parse::<f64>().unwrap_or(0.0)).collect();
+
+    if L1.len() < 1 {
+        panic!("Not enough values in L1");
+    }
+
+
+    println!("{:?}", brute_force_correlation(&L1, target, error, 0 as usize))
 }
 
 fn brute_force_correlation(L1: &[f64], goal: f64, variation: f64, counter: usize) -> Vec<f64>{
@@ -12,9 +78,9 @@ fn brute_force_correlation(L1: &[f64], goal: f64, variation: f64, counter: usize
 
     let cor = correlation(L1, &L2);
 
+    println!("Attempt {}: {}", counter, cor);
 
     if goal - variation <= cor && cor <= goal + variation {
-        println!("Attempt {}: {}", counter, cor);
         return L2
     }
     else {
