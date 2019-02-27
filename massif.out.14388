@@ -1,0 +1,1157 @@
+desc: (none)
+cmd: brutecorr 2 2.3 3.3 3.7 4.2 4.6 4.5 5 5.5 5.7 6.1 6.1 -t 0.75 -e 0.0001
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=667422
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=667961
+mem_heap_B=672
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=668122
+mem_heap_B=1696
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=689012
+mem_heap_B=1816
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=776577
+mem_heap_B=1816
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x56E597A: _IO_file_doallocate (in /usr/lib64/libc-2.27.so)
+  n1: 1024 0x56F372E: _IO_doallocbuf (in /usr/lib64/libc-2.27.so)
+   n1: 1024 0x56F27A2: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib64/libc-2.27.so)
+    n1: 1024 0x56E7096: getdelim (in /usr/lib64/libc-2.27.so)
+     n1: 1024 0x5248361: pthread_getattr_np (in /usr/lib64/libpthread-2.27.so)
+      n1: 1024 0x185252: std::rt::lang_start_internal (thread.rs:267)
+       n0: 1024 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 552 0x56E6359: __fopen_internal (in /usr/lib64/libc-2.27.so)
+  n1: 552 0x52482B9: pthread_getattr_np (in /usr/lib64/libpthread-2.27.so)
+   n1: 552 0x185252: std::rt::lang_start_internal (thread.rs:267)
+    n0: 552 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 240 0x56E6EEE: getdelim (in /usr/lib64/libc-2.27.so)
+  n1: 240 0x5248361: pthread_getattr_np (in /usr/lib64/libpthread-2.27.so)
+   n1: 240 0x185252: std::rt::lang_start_internal (thread.rs:267)
+    n0: 240 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=776910
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=777676
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=778069
+mem_heap_B=4
+mem_heap_extra_B=20
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=778709
+mem_heap_B=205
+mem_heap_extra_B=59
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=779132
+mem_heap_B=214
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=780547
+mem_heap_B=230
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=781486
+mem_heap_B=246
+mem_heap_extra_B=90
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=782053
+mem_heap_B=734
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=782659
+mem_heap_B=750
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=783604
+mem_heap_B=766
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=784048
+mem_heap_B=1630
+mem_heap_extra_B=122
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=785104
+mem_heap_B=1646
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=786369
+mem_heap_B=2134
+mem_heap_extra_B=122
+mem_stacks_B=0
+heap_tree=detailed
+n9: 2134 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 48 0x11C01C: clap::args::arg::Arg::value_name (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n0: 48 in 3 places, all below massif's threshold (1.00%)
+ n1: 48 0x17B677: std::thread::Thread::new (alloc.rs:72)
+  n1: 48 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 48 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 40 0x17B604: std::thread::Thread::new (alloc.rs:72)
+  n1: 40 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 40 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 32 0x12AEA4: clap::app::parser::Parser::add_reqs (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 32 0x12B1D3: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 32 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 32 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 32 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 32 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 32 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 32 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 32 0x56AFCAD: __cxa_thread_atexit_impl (in /usr/lib64/libc-2.27.so)
+  n1: 32 0x18337A: std::sys_common::thread_info::set (fast_thread_local.rs:29)
+   n1: 32 0x185486: std::rt::lang_start_internal (rt.rs:41)
+    n0: 32 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 14 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=788021
+mem_heap_B=2374
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=788527
+mem_heap_B=2782
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=789088
+mem_heap_B=2804
+mem_heap_extra_B=284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=789471
+mem_heap_B=2814
+mem_heap_extra_B=370
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=789855
+mem_heap_B=2825
+mem_heap_extra_B=455
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=790141
+mem_heap_B=2837
+mem_heap_extra_B=515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=790887
+mem_heap_B=2846
+mem_heap_extra_B=530
+mem_stacks_B=0
+heap_tree=detailed
+n10: 2846 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 240 0x12B4FA: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 240 0x1179B0: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 240 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 240 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 240 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 240 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 240 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 87 in 13 places, all below massif's threshold (1.00%)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 55 0x17C037: std::env::args_os (alloc.rs:72)
+  n1: 55 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 55 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 55 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 55 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 55 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 55 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 55 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 48 0x11C01C: clap::args::arg::Arg::value_name (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n0: 48 in 3 places, all below massif's threshold (1.00%)
+ n1: 48 0x17B677: std::thread::Thread::new (alloc.rs:72)
+  n1: 48 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 48 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 40 0x17B604: std::thread::Thread::new (alloc.rs:72)
+  n1: 40 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 40 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=26
+#-----------
+time=791207
+mem_heap_B=2837
+mem_heap_extra_B=515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=791582
+mem_heap_B=3077
+mem_heap_extra_B=515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=792017
+mem_heap_B=3557
+mem_heap_extra_B=515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=793189
+mem_heap_B=6117
+mem_heap_extra_B=523
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=793753
+mem_heap_B=6150
+mem_heap_extra_B=578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=794171
+mem_heap_B=6150
+mem_heap_extra_B=578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=794818
+mem_heap_B=6149
+mem_heap_extra_B=555
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=795856
+mem_heap_B=6165
+mem_heap_extra_B=563
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=796323
+mem_heap_B=6331
+mem_heap_extra_B=589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=796840
+mem_heap_B=6363
+mem_heap_extra_B=597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=797369
+mem_heap_B=6747
+mem_heap_extra_B=613
+mem_stacks_B=0
+heap_tree=detailed
+n11: 6747 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 365 in 26 places, all below massif's threshold (1.00%)
+ n1: 192 0x157278: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 192 0x15D41C: _ZN67_$LT$alloc..collections..btree..map..BTreeMap$LT$K$C$$u20$V$GT$$GT$6insert17h0788d272f97f9f57E.llvm.11060340948522446002 (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1574BB: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+             n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+              n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+               n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x151718: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+         n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+          n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+           n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x1522F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+           n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+            n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+             n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=37
+#-----------
+time=797902
+mem_heap_B=6748
+mem_heap_extra_B=636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=798555
+mem_heap_B=6780
+mem_heap_extra_B=692
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=798926
+mem_heap_B=6784
+mem_heap_extra_B=712
+mem_stacks_B=0
+heap_tree=peak
+n11: 6784 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 402 in 31 places, all below massif's threshold (1.00%)
+ n1: 192 0x157278: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 192 0x15D41C: _ZN67_$LT$alloc..collections..btree..map..BTreeMap$LT$K$C$$u20$V$GT$$GT$6insert17h0788d272f97f9f57E.llvm.11060340948522446002 (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1574BB: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+             n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+              n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+               n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x151718: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+         n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+          n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+           n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x1522F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+           n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+            n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+             n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=40
+#-----------
+time=799048
+mem_heap_B=6751
+mem_heap_extra_B=633
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=799618
+mem_heap_B=6753
+mem_heap_extra_B=655
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=800001
+mem_heap_B=6767
+mem_heap_extra_B=641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=800384
+mem_heap_B=6783
+mem_heap_extra_B=641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=800774
+mem_heap_B=6576
+mem_heap_extra_B=648
+mem_stacks_B=0
+heap_tree=detailed
+n10: 6576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 386 in 34 places, all below massif's threshold (1.00%)
+ n1: 192 0x157278: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x151718: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+         n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+          n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+           n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x1522F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+           n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+            n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+             n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=45
+#-----------
+time=801243
+mem_heap_B=6549
+mem_heap_extra_B=675
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=801573
+mem_heap_B=6551
+mem_heap_extra_B=681
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=802238
+mem_heap_B=6322
+mem_heap_extra_B=598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=802760
+mem_heap_B=6297
+mem_heap_extra_B=623
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=802907
+mem_heap_B=6224
+mem_heap_extra_B=568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=803034
+mem_heap_B=6227
+mem_heap_extra_B=589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=803204
+mem_heap_B=6231
+mem_heap_extra_B=609
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=803330
+mem_heap_B=6232
+mem_heap_extra_B=608
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=803748
+mem_heap_B=6246
+mem_heap_extra_B=618
+mem_stacks_B=0
+heap_tree=detailed
+n8: 6246 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 323 in 43 places, all below massif's threshold (1.00%)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x151718: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x1519D3: clap::app::usage::create_error_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x130FDA: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+         n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+          n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+           n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=54
+#-----------
+time=804055
+mem_heap_B=6245
+mem_heap_extra_B=619
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=804186
+mem_heap_B=6227
+mem_heap_extra_B=589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=804392
+mem_heap_B=6428
+mem_heap_extra_B=628
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=808536
+mem_heap_B=6628
+mem_heap_extra_B=620
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=809046
+mem_heap_B=6652
+mem_heap_extra_B=636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=809192
+mem_heap_B=6573
+mem_heap_extra_B=579
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=809337
+mem_heap_B=6565
+mem_heap_extra_B=563
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=809488
+mem_heap_B=3980
+mem_heap_extra_B=516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=809908
+mem_heap_B=3988
+mem_heap_extra_B=532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=810074
+mem_heap_B=4028
+mem_heap_extra_B=556
+mem_stacks_B=0
+heap_tree=detailed
+n9: 4028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 400 0x19609C: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<&'a T, core::slice::Iter<'a, T>>>::spec_extend (alloc.rs:108)
+  n2: 400 0x19567A: <&mut W as core::fmt::Write>::write_str (vec.rs:1351)
+   n1: 400 0x172BA4: <ansi_term::display::ANSIGenericString<'a, str> as core::fmt::Display>::fmt (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 400 0x19D9BA: core::fmt::write (mod.rs:1016)
+     n1: 400 0x19E762: core::fmt::Formatter::write_fmt (mod.rs:1457)
+      n1: 400 0x15AC16: <clap::fmt::Format<T> as core::fmt::Display>::fmt (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 400 0x19D9BA: core::fmt::write (mod.rs:1016)
+        n1: 400 0x1959B3: alloc::fmt::format (mod.rs:195)
+         n1: 400 0x14F511: clap::errors::Error::unknown_argument (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 400 0x13103D: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 400 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n1: 400 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n1: 400 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n1: 400 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n1: 400 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+                n1: 400 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+                 n1: 400 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+                  n0: 400 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 244 in 48 places, all below massif's threshold (1.00%)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 48 0x11C01C: clap::args::arg::Arg::value_name (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n0: 48 in 3 places, all below massif's threshold (1.00%)
+ n1: 48 0x17B677: std::thread::Thread::new (alloc.rs:72)
+  n1: 48 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 48 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=64
+#-----------
+time=810287
+mem_heap_B=4116
+mem_heap_extra_B=580
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=811076
+mem_heap_B=4115
+mem_heap_extra_B=597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=811261
+mem_heap_B=3146
+mem_heap_extra_B=574
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=811451
+mem_heap_B=3114
+mem_heap_extra_B=558
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=811601
+mem_heap_B=2122
+mem_heap_extra_B=542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=811775
+mem_heap_B=826
+mem_heap_extra_B=518
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=812228
+mem_heap_B=759
+mem_heap_extra_B=465
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=812386
+mem_heap_B=679
+mem_heap_extra_B=401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=813184
+mem_heap_B=650
+mem_heap_extra_B=366
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=813336
+mem_heap_B=482
+mem_heap_extra_B=334
+mem_stacks_B=0
+heap_tree=detailed
+n4: 482 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 408 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 408 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 408 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 408 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 408 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 408 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 408 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 408 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 42 0x17C037: std::env::args_os (alloc.rs:72)
+  n1: 42 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 42 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 42 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 42 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 42 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 42 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 42 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 32 0x56AFCAD: __cxa_thread_atexit_impl (in /usr/lib64/libc-2.27.so)
+  n1: 32 0x18337A: std::sys_common::thread_info::set (fast_thread_local.rs:29)
+   n1: 32 0x185486: std::rt::lang_start_internal (rt.rs:41)
+    n0: 32 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 0 in 56 places, all below massif's threshold (1.00%)

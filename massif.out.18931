@@ -1,0 +1,1566 @@
+desc: (none)
+cmd: brutecorr 2 2.3 3.3 3.7 4.2 4.6 4.5 5 5.5 5.7 6.1 6.1 -t 0.75 -e 0.0001
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=806703
+mem_heap_B=6591
+mem_heap_extra_B=513
+mem_stacks_B=0
+heap_tree=detailed
+n11: 6591 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 976 0x12B4E2: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 976 0x117900: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 976 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 976 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+     n1: 976 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+      n1: 976 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+       n0: 976 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 960 0x134CBC: clap::app::parser::Parser::create_help_and_version (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 960 0x12CB17: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 960 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 960 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 960 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 960 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 960 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+        n1: 960 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+         n1: 960 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+          n0: 960 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 864 0x162F5E: <alloc::vec::Vec<T> as alloc::vec::SpecExtend<T, I>>::spec_extend (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 864 0x121BEC: <vec_map::VecMap<V>>::insert (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 864 0x12B32C: clap::app::parser::Parser::add_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 864 0x117800: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 864 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 864 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+       n1: 864 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+        n1: 864 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+         n0: 864 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 473 in 34 places, all below massif's threshold (1.00%)
+ n1: 192 0x157278: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x16B3D5: clap::app::validator::Validator::validate (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x132410: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 192 0x15D41C: _ZN67_$LT$alloc..collections..btree..map..BTreeMap$LT$K$C$$u20$V$GT$$GT$6insert17h0788d272f97f9f57E.llvm.11060340948522446002 (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 192 0x1574BB: clap::app::usage::get_required_usage_from (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 192 0x1525F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 192 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 192 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 192 0x16B3D5: clap::app::validator::Validator::validate (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 192 0x132410: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 192 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 192 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 192 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 192 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n1: 192 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+             n1: 192 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+              n1: 192 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+               n0: 192 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 144 0x17BF9C: std::env::args_os (alloc.rs:72)
+  n1: 144 0x125970: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 144 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 144 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 144 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 144 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 144 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 144 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 80 0x17B6C5: std::thread::Thread::new (alloc.rs:72)
+  n1: 80 0x18545D: std::rt::lang_start_internal (rt.rs:40)
+   n0: 80 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x151718: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x16B3D5: clap::app::validator::Validator::validate (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x132410: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+         n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+          n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+           n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 75 0x1522F3: clap::app::usage::create_help_usage (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 75 0x151C03: clap::app::usage::create_usage_no_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 75 0x151761: clap::app::usage::create_usage_with_title (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 75 0x16B3D5: clap::app::validator::Validator::validate (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 75 0x132410: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 75 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 75 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 75 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 75 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 75 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+           n1: 75 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+            n1: 75 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+             n0: 75 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+#-----------
+snapshot=2
+#-----------
+time=1748102
+mem_heap_B=22909
+mem_heap_extra_B=2731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2553126
+mem_heap_B=40225
+mem_heap_extra_B=4911
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=3167770
+mem_heap_B=53537
+mem_heap_extra_B=6575
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=4027174
+mem_heap_B=72125
+mem_heap_extra_B=8883
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=4827814
+mem_heap_B=89373
+mem_heap_extra_B=11035
+mem_stacks_B=0
+heap_tree=detailed
+n4: 89373 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 85056 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 84992 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 84928 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 84864 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 84800 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 84736 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 84672 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 84608 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 84544 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 84480 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 84416 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 84352 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 84288 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 84224 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 84160 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 84096 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 84032 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 83968 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 83904 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 83840 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 83776 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 83712 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 83648 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 83584 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 83520 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 83456 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 83392 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 83328 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 83264 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 83200 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n1: 1024 0x17DAA5: std::io::stdio::stdout (alloc.rs:72)
+  n1: 1024 0x17E976: std::io::stdio::_print (stdio.rs:729)
+   n1: 1024 0x117B36: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 1024 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 1024 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+      n1: 1024 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+       n1: 1024 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+        n0: 1024 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 733 in 58 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=5743357
+mem_heap_B=109213
+mem_heap_extra_B=13515
+mem_stacks_B=0
+heap_tree=detailed
+n3: 109213 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 104896 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 104832 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 104768 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 104704 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 104640 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 104576 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 104512 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 104448 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 104384 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 104320 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 104256 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 104192 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 104128 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 104064 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 104000 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 103936 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 103872 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 103808 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 103744 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 103680 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 103616 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 103552 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 103488 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 103424 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 103360 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 103296 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 103232 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 103168 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 103104 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 103040 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 1757 in 59 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=6508312
+mem_heap_B=125729
+mem_heap_extra_B=15599
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=7548788
+mem_heap_B=148413
+mem_heap_extra_B=18419
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=8346952
+mem_heap_B=165665
+mem_heap_extra_B=20591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=9558964
+mem_heap_B=191917
+mem_heap_extra_B=23859
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=10388109
+mem_heap_B=210013
+mem_heap_extra_B=26115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=11112716
+mem_heap_B=225697
+mem_heap_extra_B=28095
+mem_stacks_B=0
+heap_tree=detailed
+n3: 225697 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 221376 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 221312 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 221248 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 221184 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 221120 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 221056 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 220992 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 220928 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 220864 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 220800 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 220736 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 220672 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 220608 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 220544 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 220480 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 220416 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 220352 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 220288 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 220224 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 220160 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 220096 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 220032 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 219968 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 219904 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 219840 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 219776 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 219712 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 219648 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 219584 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 219520 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 2560 0x11E686: <std::collections::hash::table::RawTable<K, V>>::new_uninitialized_internal (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n1: 2560 0x12485B: <std::collections::hash::map::HashMap<K, V, S>>::try_resize (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n1: 2560 0x124DD9: <std::collections::hash::map::HashMap<K, V, S>>::entry (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n1: 2560 0x148208: clap::args::arg_matcher::ArgMatcher::add_val_to (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n1: 2560 0x138A98: clap::app::parser::Parser::add_single_val_to_arg (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n1: 2560 0x12E9C0: clap::app::parser::Parser::get_matches_with (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n1: 2560 0x12636B: clap::app::App::get_matches_from_safe_borrow (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n1: 2560 0x12598A: clap::app::App::get_matches (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n1: 2560 0x1179DF: brutecorr::main (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n1: 2560 0x115D71: std::rt::lang_start::{{closure}} (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n1: 2560 0x1849F1: std::panicking::try::do_call (rt.rs:49)
+            n1: 2560 0x1875C8: __rust_maybe_catch_panic (lib.rs:87)
+             n1: 2560 0x1854FB: std::rt::lang_start_internal (panicking.rs:276)
+              n0: 2560 0x118610: main (in /home/ajmwagar/.cargo/bin/brutecorr)
+ n0: 1761 in 59 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=11836802
+mem_heap_B=241505
+mem_heap_extra_B=30071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=12974970
+mem_heap_B=266017
+mem_heap_extra_B=33135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=13801746
+mem_heap_B=283997
+mem_heap_extra_B=35363
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=14878415
+mem_heap_B=307229
+mem_heap_extra_B=38267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=15855080
+mem_heap_B=328285
+mem_heap_extra_B=40899
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=16553532
+mem_heap_B=343421
+mem_heap_extra_B=42795
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=17391678
+mem_heap_B=361633
+mem_heap_extra_B=45087
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=18510282
+mem_heap_B=385889
+mem_heap_extra_B=48119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=19348641
+mem_heap_B=404065
+mem_heap_extra_B=50391
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=20187100
+mem_heap_B=422177
+mem_heap_extra_B=52655
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=21303482
+mem_heap_B=446373
+mem_heap_extra_B=55675
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=21862320
+mem_heap_B=458397
+mem_heap_extra_B=57163
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=22701626
+mem_heap_B=476641
+mem_heap_extra_B=59463
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=23538987
+mem_heap_B=494885
+mem_heap_extra_B=61739
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=24377826
+mem_heap_B=512997
+mem_heap_extra_B=64003
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=25216517
+mem_heap_B=531105
+mem_heap_extra_B=66271
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=25776063
+mem_heap_B=543137
+mem_heap_extra_B=67775
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=26752711
+mem_heap_B=564257
+mem_heap_extra_B=70415
+mem_stacks_B=0
+heap_tree=detailed
+n2: 564257 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 559936 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 559872 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 559808 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 559744 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 559680 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 559616 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 559552 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 559488 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 559424 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 559360 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 559296 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 559232 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 559168 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 559104 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 559040 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 558976 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 558912 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 558848 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 558784 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 558720 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 558656 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 558592 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 558528 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 558464 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 558400 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 558336 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 558272 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 558208 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 558144 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 558080 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4321 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=27589842
+mem_heap_B=582397
+mem_heap_extra_B=72667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=28288370
+mem_heap_B=597565
+mem_heap_extra_B=74563
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=28848685
+mem_heap_B=609597
+mem_heap_extra_B=76067
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=29689235
+mem_heap_B=627757
+mem_heap_extra_B=78339
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=30811487
+mem_heap_B=651933
+mem_heap_extra_B=81355
+mem_stacks_B=0
+heap_tree=detailed
+n2: 651933 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 647616 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 647552 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 647488 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 647424 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 647360 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 647296 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 647232 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 647168 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 647104 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 647040 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 646976 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 646912 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 646848 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 646784 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 646720 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 646656 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 646592 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 646528 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 646464 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 646400 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 646336 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 646272 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 646208 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 646144 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 646080 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 646016 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 645952 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 645888 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 645824 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 645760 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4317 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=31933311
+mem_heap_B=676129
+mem_heap_extra_B=84399
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=32773562
+mem_heap_B=694461
+mem_heap_extra_B=86675
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=33334382
+mem_heap_B=706593
+mem_heap_extra_B=88207
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=34174796
+mem_heap_B=724769
+mem_heap_extra_B=90479
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=34735165
+mem_heap_B=736801
+mem_heap_extra_B=91983
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=35856005
+mem_heap_B=761021
+mem_heap_extra_B=94995
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=36696112
+mem_heap_B=779229
+mem_heap_extra_B=97267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=37537887
+mem_heap_B=797345
+mem_heap_extra_B=99551
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=38098522
+mem_heap_B=809505
+mem_heap_extra_B=101071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=39218510
+mem_heap_B=833853
+mem_heap_extra_B=104099
+mem_stacks_B=0
+heap_tree=detailed
+n2: 833853 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 829536 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 829472 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 829408 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 829344 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 829280 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 829216 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 829152 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 829088 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 829024 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 828960 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 828896 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 828832 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 828768 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 828704 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 828640 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 828576 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 828512 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 828448 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 828384 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 828320 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 828256 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 828192 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 828128 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 828064 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 828000 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 827936 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 827872 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 827808 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 827744 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 827680 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4317 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=40058803
+mem_heap_B=852069
+mem_heap_extra_B=106387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=41179175
+mem_heap_B=876449
+mem_heap_extra_B=109439
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=42300834
+mem_heap_B=900765
+mem_heap_extra_B=112459
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=42860325
+mem_heap_B=912993
+mem_heap_extra_B=114007
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=43420101
+mem_heap_B=925217
+mem_heap_extra_B=115535
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=43979146
+mem_heap_B=937313
+mem_heap_extra_B=117047
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=44538131
+mem_heap_B=949437
+mem_heap_extra_B=118547
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=45097124
+mem_heap_B=961573
+mem_heap_extra_B=120075
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=45656413
+mem_heap_B=973665
+mem_heap_extra_B=121591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=46216012
+mem_heap_B=985697
+mem_heap_extra_B=123095
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=46775478
+mem_heap_B=997793
+mem_heap_extra_B=124607
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=47334469
+mem_heap_B=1009949
+mem_heap_extra_B=126107
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1009949 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1005632 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 1005568 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 1005504 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 1005440 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 1005376 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 1005312 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 1005248 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 1005184 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 1005120 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 1005056 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 1004992 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 1004928 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 1004864 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 1004800 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 1004736 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 1004672 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 1004608 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 1004544 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 1004480 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 1004416 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 1004352 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 1004288 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 1004224 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 1004160 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 1004096 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 1004032 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 1003968 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 1003904 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 1003840 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 1003776 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4317 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=47893439
+mem_heap_B=1022013
+mem_heap_extra_B=127619
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=48453447
+mem_heap_B=1034209
+mem_heap_extra_B=129159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=49012450
+mem_heap_B=1046269
+mem_heap_extra_B=130651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=49572557
+mem_heap_B=1058273
+mem_heap_extra_B=132167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=50131475
+mem_heap_B=1070397
+mem_heap_extra_B=133667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=50690621
+mem_heap_B=1082461
+mem_heap_extra_B=135171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=51250169
+mem_heap_B=1094561
+mem_heap_extra_B=136703
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=51809575
+mem_heap_B=1106653
+mem_heap_extra_B=138195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=52368712
+mem_heap_B=1118749
+mem_heap_extra_B=139707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=52927825
+mem_heap_B=1130913
+mem_heap_extra_B=141247
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1130913 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1126592 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 1126528 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 1126464 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 1126400 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 1126336 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 1126272 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 1126208 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 1126144 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 1126080 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 1126016 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 1125952 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 1125888 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 1125824 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 1125760 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 1125696 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 1125632 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 1125568 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 1125504 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 1125440 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 1125376 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 1125312 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 1125248 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 1125184 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 1125120 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 1125056 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 1124992 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 1124928 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 1124864 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 1124800 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 1124736 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4321 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=53487374
+mem_heap_B=1143009
+mem_heap_extra_B=142759
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=54046274
+mem_heap_B=1155133
+mem_heap_extra_B=144259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=54605860
+mem_heap_B=1167261
+mem_heap_extra_B=145771
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=55164962
+mem_heap_B=1179357
+mem_heap_extra_B=147283
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=55723970
+mem_heap_B=1191453
+mem_heap_extra_B=148795
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=56283221
+mem_heap_B=1203489
+mem_heap_extra_B=150319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=56842675
+mem_heap_B=1215585
+mem_heap_extra_B=151831
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=57402124
+mem_heap_B=1227745
+mem_heap_extra_B=153351
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=57961097
+mem_heap_B=1239869
+mem_heap_extra_B=154851
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=58520741
+mem_heap_B=1252001
+mem_heap_extra_B=156383
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1252001 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1247680 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 1247616 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 1247552 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 1247488 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 1247424 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 1247360 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 1247296 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 1247232 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 1247168 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 1247104 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 1247040 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 1246976 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 1246912 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 1246848 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 1246784 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 1246720 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 1246656 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 1246592 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 1246528 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 1246464 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 1246400 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 1246336 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 1246272 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 1246208 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 1246144 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 1246080 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 1246016 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 1245952 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 1245888 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 1245824 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4321 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=59080555
+mem_heap_B=1264161
+mem_heap_extra_B=157903
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=59640100
+mem_heap_B=1276257
+mem_heap_extra_B=159415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=60199136
+mem_heap_B=1288417
+mem_heap_extra_B=160935
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=60759048
+mem_heap_B=1300513
+mem_heap_extra_B=162447
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=61318906
+mem_heap_B=1312609
+mem_heap_extra_B=163959
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=61878837
+mem_heap_B=1324641
+mem_heap_extra_B=165463
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=62437741
+mem_heap_B=1336741
+mem_heap_extra_B=166971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=62997484
+mem_heap_B=1348769
+mem_heap_extra_B=168479
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=63557343
+mem_heap_B=1360865
+mem_heap_extra_B=169991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=64116729
+mem_heap_B=1373021
+mem_heap_extra_B=171491
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1373021 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1368704 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 1368640 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 1368576 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 1368512 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 1368448 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 1368384 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 1368320 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 1368256 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 1368192 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 1368128 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 1368064 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 1368000 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 1367936 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 1367872 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 1367808 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 1367744 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 1367680 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 1367616 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 1367552 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 1367488 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 1367424 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 1367360 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 1367296 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 1367232 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 1367168 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 1367104 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 1367040 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 1366976 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 1366912 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 1366848 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4317 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=89
+#-----------
+time=64675714
+mem_heap_B=1385125
+mem_heap_extra_B=173019
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=65124033
+mem_heap_B=1394781
+mem_heap_extra_B=174211
+mem_stacks_B=0
+heap_tree=peak
+n2: 1394781 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1390464 0x117FCA: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+  n2: 1390400 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+   n2: 1390336 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+    n2: 1390272 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+     n2: 1390208 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+      n2: 1390144 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+       n2: 1390080 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+        n2: 1390016 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+         n2: 1389952 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+          n2: 1389888 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+           n2: 1389824 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+            n2: 1389760 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+             n2: 1389696 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+              n2: 1389632 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+               n2: 1389568 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                n2: 1389504 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                 n2: 1389440 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                  n2: 1389376 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                   n2: 1389312 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                    n2: 1389248 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                     n2: 1389184 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                      n2: 1389120 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                       n2: 1389056 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                        n2: 1388992 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                         n2: 1388928 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                          n2: 1388864 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                           n2: 1388800 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                            n2: 1388736 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                             n2: 1388672 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 1388608 0x118519: brutecorr::brute_force_correlation (in /home/ajmwagar/.cargo/bin/brutecorr)
+                              n0: 64 in 1 place, below massif's threshold (1.00%)
+                             n0: 64 in 1 place, below massif's threshold (1.00%)
+                            n0: 64 in 1 place, below massif's threshold (1.00%)
+                           n0: 64 in 1 place, below massif's threshold (1.00%)
+                          n0: 64 in 1 place, below massif's threshold (1.00%)
+                         n0: 64 in 1 place, below massif's threshold (1.00%)
+                        n0: 64 in 1 place, below massif's threshold (1.00%)
+                       n0: 64 in 1 place, below massif's threshold (1.00%)
+                      n0: 64 in 1 place, below massif's threshold (1.00%)
+                     n0: 64 in 1 place, below massif's threshold (1.00%)
+                    n0: 64 in 1 place, below massif's threshold (1.00%)
+                   n0: 64 in 1 place, below massif's threshold (1.00%)
+                  n0: 64 in 1 place, below massif's threshold (1.00%)
+                 n0: 64 in 1 place, below massif's threshold (1.00%)
+                n0: 64 in 1 place, below massif's threshold (1.00%)
+               n0: 64 in 1 place, below massif's threshold (1.00%)
+              n0: 64 in 1 place, below massif's threshold (1.00%)
+             n0: 64 in 1 place, below massif's threshold (1.00%)
+            n0: 64 in 1 place, below massif's threshold (1.00%)
+           n0: 64 in 1 place, below massif's threshold (1.00%)
+          n0: 64 in 1 place, below massif's threshold (1.00%)
+         n0: 64 in 1 place, below massif's threshold (1.00%)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n0: 64 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 1 place, below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 64 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n0: 4317 in 60 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=91
+#-----------
+time=65682888
+mem_heap_B=599901
+mem_heap_extra_B=74851
+mem_stacks_B=0
+heap_tree=empty
