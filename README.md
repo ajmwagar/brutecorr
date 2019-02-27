@@ -4,12 +4,13 @@ A O(n^2) algorithm for brute-forcing Pearson Correlation Coefficients
 ![Yeah](https://raw.githubusercontent.com/ajmwagar/brutecorr/master/koolaid.gif)
 
 ## Features
-
-- brute forcing vectors for Correlation Coefficients
-- *get to feel like kool aid man*
-- cross platform support
-- nice CLI
-- *get to feel like kool aid man*
+- *user gets to feel like kool aid man!*
+- **brute forcing vectors for Correlation Coefficients**
+- *user gets to feel like kool aid man!*
+- **cross platform support**
+- *user gets to feel like kool aid man!*
+- **nice CLI**
+- *user gets to feel like kool aid man!*
 - **FAST AF.**
 
 ## Usage
