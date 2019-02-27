@@ -3,7 +3,7 @@ A O(n^2) algorithm for brute-forcing Pearson Correlation Coefficients
 
 ![Yeah](https://raw.githubusercontent.com/ajmwagar/brutecorr/master/koolaid.gif)
 
-## features
+## Features
 
 - brute forcing vectors for Correlation Coefficients
 - *get to feel like kool aid man*
@@ -12,11 +12,13 @@ A O(n^2) algorithm for brute-forcing Pearson Correlation Coefficients
 - *get to feel like kool aid man*
 - **FAST AF.**
 
-## usage
+## Usage
 
-We'll get to this later.
+- `brutecorr --help`: show help message
+- `brutecorr '1 2 3 4 5' -t 0.75`: finds secondary values that generate a correlation coefficent within  `0.1` of `.75`.
+- `brutecorr '1 2 3 4 5' -t 0.75 -e 0.001`: finds secondary values that generate a correlation coefficent within  `0.001` of `.75`.
 
-## installation
+## Installation
 
 ### For developers:
 1. `git clone https://github.com/ajmwagar/brutecorr`
@@ -24,5 +26,8 @@ We'll get to this later.
 3. `cargo install --path ./ --force`
 4. Profit!
 
-### Not for developers
-Head to the [releases page](https://github.com/ajmwagar/brutecorr/releases).
+### Not for developers:
+
+1. Head to the [releases page](https://github.com/ajmwagar/brutecorr/releases).
+1. Download latest `brutecorr`
+1. Profit!
